@@ -11,3 +11,127 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.error {
+  color: #d04d4d;
+  text-align: center;
+  font-size: 14px;
+}
+.warning {
+  border: solid 1px rgb(201, 63, 63);
+}
+.warning:focus {
+  outline: none !important;
+  border:2px solid rgb(201, 63, 63);
+  transition: .5;
+}
+
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 50px auto
+}
+
+.auth-wrapper * {
+  margin-top: 8px;
+}
+
+button {
+  background-color: rgb(15, 76, 129);
+  color: white;
+  padding: 4px;
+  border: none;
+}
+
+.new-room {
+  text-decoration: none;
+  border: solid 1px rgb(15, 76, 129);
+  text-align: center;
+  color: rgb(15, 76, 129);
+  font-size: 14px;
+}
+
+.chat-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.chat-list {
+  overflow-y: scroll;
+}
+
+.chat-users {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 8px;
+  width: 20%;
+  border: solid 1px;
+}
+
+.chat-total-users {
+  background-color: rgb(15, 76, 129);
+  color: aliceblue;
+  padding: 4px;
+}
+
+.chat-space {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 10px;
+  margin: 8px;
+  border: solid 1px;
+  width: 70%;
+}
+
+.chat-space .chat-messages {
+  height: 80%;
+  overflow-y: scroll;
+}
+.chat-space .chat-message-wrapper {
+  margin: 8px;
+}
+.chat-space .chat-message {
+  background-color: rgb(15, 76, 129);
+  color: aliceblue;
+  padding: 8px;
+  display: inline-block;
+  border-radius: 10px;
+}
+.message-info {
+  display: flex;
+}
+.message-info span {
+  margin-right: 8px;
+  font-size: 11px;
+  color: #a2a1a1;
+}
+
+
+.chat-space .chat-input {
+  margin-top: auto;
+  height: 15%;
+  display: flex;
+}
+
+.chat-space .chat-input textarea {
+  flex-grow: 4;
+}
+.chat-space .chat-input button {
+  flex-grow: 1;
+  margin: 16px;
+}
+
+.chat-list::-webkit-scrollbar,
+.chat-messages::-webkit-scrollbar {
+  display: none;
+}
+.chat-list,
+.chat-messages {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
